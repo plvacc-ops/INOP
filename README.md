@@ -1,2 +1,3 @@
-# INOP
-Instrukcja Operacyjna 
+# INOP - DEPRECATED OLD DOCX VERSION
+
+For archive solution only
