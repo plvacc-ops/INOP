@@ -1,6 +1,6 @@
 % Preamble
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{inop}[Polish vACC Operational Manual]
+\ProvidesClass{inop}
 
 % Options
 \RequirePackage{kvoptions}
@@ -15,7 +15,7 @@
 
 % Loading base class
 \LoadClass[
-    a4paper,yy
+    a4paper,
     oneside,
     headsepline=true,
     footsepline=true,
@@ -43,12 +43,13 @@
 \RequirePackage{tcolorbox}
 \RequirePackage[auto]{chappg}
 \RequirePackage{fontawesome5}
-\RequirePackage[headsepline,footsepline]{scrlayer-scrpage}
+\RequirePackage[headsepline, plainheadsepline,footsepline, plainfootsepline]{scrlayer-scrpage}
+\RequirePackage{enumitem}
 
 %% Package configurations
 \graphicspath{{img/}}
 \tcbuselibrary{skins, breakable}
-\usetikzlibrary{calc}
+\usetikzlibrary{calc, positioning, shadows, shadings}
 % Colour definitions
 \definecolor{vred}{RGB}{192,0,0}%
 \definecolor{vpink}{RGB}{219,166,166}%

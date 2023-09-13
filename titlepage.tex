@@ -1,0 +1,23 @@
+\begin{titlepage}
+    \begin{tikzpicture}[overlay,remember picture,line width=5pt]
+        \node[inner sep=0pt] at ($(current page.center)+(0,3)$) {\includegraphics{bg/map.png}};
+        \path[fill=white, drop shadow={opacity=0.25}] (current page.north west)--($(current page.north west)+(0,-3)$)--($(current page.north)+(0,-5)$)--($(current page.north east)+(0,-3)$)--(current page.north east)--cycle;
+        \node[inner sep=0pt] at ($(current page.north)+(0,-2)$) {\includegraphics[width=15cm]{logo.png}};
+    \end{tikzpicture}
+\end{titlepage}
+
+\begin{tcolorbox}[
+    colback=white,
+    %halign=center,
+    %halign lower=center,
+    %halign title=center,
+    colframe=vred,
+    enhanced,
+    %leftrule=3mm,
+    before title={\faExclamationTriangle~},
+    title=\LARGE\textbf{Disclaimer}
+]
+    \textbf{This document is intended for use on VATSIM network only.}
+    \tcblower%
+    Do not use for training purposes or in real life scenarios.
+\end{tcolorbox}
