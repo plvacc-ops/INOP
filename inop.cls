@@ -16,6 +16,7 @@
 % Loading base class
 \LoadClass[
     a4paper,
+    DIV=64,
     oneside,
     headsepline=true,
     footsepline=true,
