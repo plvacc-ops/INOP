@@ -15,11 +15,7 @@
 
 % Loading base class
 \LoadClass[
-    a4paper,
-    DIV=64,
     oneside,
-    headsepline=true,
-    footsepline=true,
     headings=small,
     appendixprefix=true,
     numbers=noenddot,
@@ -28,6 +24,11 @@
     ]{scrbook}
 
 % Loading packages
+\RequirePackage[
+    paper=a4paper,
+    margin=1.27cm,
+    includeheadfoot
+]{geometry}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[default]{lato}
 \RequirePackage[hidelinks,breaklinks]{hyperref}
