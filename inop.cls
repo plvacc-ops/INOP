@@ -32,6 +32,7 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage[default]{lato}
 \RequirePackage[hidelinks,breaklinks]{hyperref}
+\RequirePackage{amsmath}
 \RequirePackage{cleveref}
 \RequirePackage{multicol}
 \RequirePackage{graphicx}
@@ -43,7 +44,7 @@
 \RequirePackage{multirow}
 \RequirePackage{longtable}
 \RequirePackage{tcolorbox}
-\RequirePackage[auto]{chappg}
+%\RequirePackage[auto]{chappg}
 \RequirePackage{fontawesome5}
 \RequirePackage[headsepline, plainheadsepline,footsepline, plainfootsepline]{scrlayer-scrpage}
 \RequirePackage{enumitem}
@@ -85,4 +86,4 @@
 \cfoot[\textbf{FOR VATSIM USE ONLY}]{\textbf{FOR VATSIM USE ONLY}}
 \ofoot[Revision: \revision]{Revision: \revision}
 
-\setcounter{tocdepth}{0}
+\setcounter{tocdepth}{1}
