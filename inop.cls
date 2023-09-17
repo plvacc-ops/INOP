@@ -32,11 +32,12 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage[default]{lato}
 \RequirePackage[hidelinks,breaklinks]{hyperref}
+\RequirePackage[dvipsnames,table]{xcolor}
+\RequirePackage[leftbars,pdftex,xcolor]{changebar}
 \RequirePackage{amsmath}
 \RequirePackage{cleveref}
 \RequirePackage{multicol}
 \RequirePackage{graphicx}
-\RequirePackage[dvipsnames,table]{xcolor}
 \RequirePackage{subcaption}
 \RequirePackage{tikz}
 \RequirePackage{tikzpagenodes}
@@ -53,6 +54,7 @@
 \graphicspath{{img/}}
 \tcbuselibrary{skins, breakable}
 \usetikzlibrary{calc, positioning, shadows, shadings}
+\cbcolor{black}
 % Colour definitions
 \definecolor{vred}{RGB}{192,0,0}%
 \definecolor{vpink}{RGB}{219,166,166}%
@@ -61,6 +63,20 @@
 \renewcommand{\labelitemii}{---}
 \renewcommand{\labelitemiii}{---}
 \renewcommand{\labelitemiv}{---}
+
+\newcommand\titlerule[1][1pt]{\rule{\textwidth}{#1}}
+
+\renewcommand\chapterlinesformat[3]{%
+  \titlerule\par\nobreak%
+  \@hangfrom{#2}{#3}%
+  \par\nobreak\titlerule%
+}
+
+\renewcommand\sectionlinesformat[4]{%
+  \par\nobreak%
+  \@hangfrom{#3}{#4}\\%
+  \nobreak\titlerule%
+}
 
 % Font definitions
 \addtokomafont{chapter}{%
@@ -79,7 +95,7 @@
 \pagestyle{scrheadings}
 
 \ihead[{\includegraphics[height=0.43cm]{logo.png}}]{\includegraphics[height=0.43cm]{logo.png}}
-\chead[\textbf{INOP FIR WARSZAWA}]{\textbf{INOP FIR WARSZAWA}}
+\chead[\textbf{vFIR WARSZAWA OPERATIONS MANUAL}]{\textbf{vFIR WARSZAWA OPERATIONS MANUAL}}
 \ohead[Page \pagemark]{Page \pagemark}
 
 \ifoot[{\includegraphics[height=0.43cm]{logo.png}}]{\includegraphics[height=0.43cm]{logo.png}}
