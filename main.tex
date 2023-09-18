@@ -1,6 +1,8 @@
 \documentclass[revision=2309.1]{inop}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage{biblatex}
+\addbibresource{references.bib}
 
 \title{Operational Manual}
 \author{ACCPL3 Dawid\and ACCPL6 Matt}
@@ -10,6 +12,7 @@
 \input{titlepage.tex}
 \tableofcontents
 \input{revisionHistory.tex}
+\printbibliography[heading=bibintoc]
 \include{sections/introduction}
 \include{sections/airspace}
 \input{titlepage_twr.tex}
