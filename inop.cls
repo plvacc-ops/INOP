@@ -31,7 +31,14 @@
 ]{geometry}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[default]{lato}
-\RequirePackage[hidelinks,breaklinks]{hyperref}
+\RequirePackage[
+    hidelinks,
+    breaklinks,
+    pdftex,
+    pdfauthor={Polish VACC},
+    pdftitle={vFIR Warszawa Operations Manual},
+    pdfcreator={pdflatex}
+    ]{hyperref}
 \RequirePackage[dvipsnames,table]{xcolor}
 \RequirePackage[leftbars,pdftex,xcolor]{changebar}
 \RequirePackage{amsmath}
