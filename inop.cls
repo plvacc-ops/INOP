@@ -55,8 +55,9 @@
 \RequirePackage{tcolorbox}
 %\RequirePackage[auto]{chappg}
 \RequirePackage{fontawesome5}
-\RequirePackage[headsepline, plainheadsepline,footsepline, plainfootsepline]{scrlayer-scrpage}
+\RequirePackage[headsepline, plainheadsepline,footsepline, plainfootsepline,draft=false]{scrlayer-scrpage}
 \RequirePackage{enumitem}
+\RequirePackage{gensymb}
 
 %% Package configurations
 \graphicspath{{img/}}
