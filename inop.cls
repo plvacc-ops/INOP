@@ -82,11 +82,11 @@
   \par\nobreak\titlerule%
 }
 
-\renewcommand\sectionlinesformat[4]{%
-  \par\nobreak%
-  \@hangfrom{#3}{#4}\\%
-  \nobreak\titlerule%
-}
+% \renewcommand\sectionlinesformat[4]{%
+%   \par\nobreak%
+%   \@hangfrom{#3}{#4}\\%
+%   \nobreak\titlerule%
+% }
 
 % Font definitions
 \addtokomafont{chapter}{%
