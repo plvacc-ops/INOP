@@ -48,6 +48,7 @@
 \RequirePackage{subcaption}
 \RequirePackage{tikz}
 \RequirePackage{tikzpagenodes}
+\RequirePackage{array}
 \RequirePackage{booktabs}
 \RequirePackage{multirow}
 \RequirePackage{longtable}
@@ -72,6 +73,8 @@
 \renewcommand{\labelitemiv}{---}
 
 \newcommand\titlerule[1][1pt]{\rule{\textwidth}{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 
 \renewcommand\chapterlinesformat[3]{%
   \titlerule\par\nobreak%
@@ -110,3 +113,4 @@
 \ofoot[Revision: \revision]{Revision: \revision}
 
 \setcounter{tocdepth}{1}
+\setcounter{chapter}{-1}
