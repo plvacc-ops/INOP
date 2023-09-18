@@ -1,16 +1,16 @@
 \begin{titlepage}
     \begin{tikzpicture}[overlay,remember picture,line width=5pt]
-        \node[inner sep=0pt] at ($(current page.center)+(1,-3)$) {\includegraphics{bg/twr.jpg}};
+        \node[inner sep=0pt] at ($(current page.center)+(1,-3)$) {\includegraphics{bg/tma_wa.png}};
         \path[fill=vred!75!black] (current page.north west) -- ($(current page.north east)+(0,-10)$) -- (current page.north east) -- (current page.north west) -- cycle;
         \path[fill=vred, drop shadow={opacity=0.25}] (current page.north east) -- ($(current page.north west)+(0,-10)$) -- (current page.north west) -- cycle;
 
-        \node(title) at ($(current page.north west)+(7.5,-1.5)$) {\color{white}{\textbf{\Huge{AERODROME CONTROL SERVICE}}}};
+        \node(title) at ($(current page.north west)+(7.5,-1.5)$) {\color{white}{\textbf{\Huge{TMA Warszawa, Łódź, Radom}}}};
         \node[inner sep=0pt] at ($(title.south west)+(2.95,-1)$) {%
             \begin{tcolorbox}[title=Last revision, colback=vred, coltext=white, colframe=white, coltitle=vred, width=6cm, halign= center]
-                21 APR 2023
+                13 JUL 2023
             \end{tcolorbox}
         };
         \node[inner sep=0pt] at ($(title.south west)+(2.375,-2.5)$) {\includegraphics[scale=0.33]{logo_mono.png}};
     \end{tikzpicture}
-    \addcontentsline{toc}{part}{Aerodrome Control Service}
+    \addcontentsline{toc}{part}{TMA Warszawa}
 \end{titlepage}
