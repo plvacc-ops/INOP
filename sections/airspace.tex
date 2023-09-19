@@ -41,47 +41,57 @@ In this airspace, the minimum vertical separation is:
 \label{sect:airspace:services}
 
 Within vFIR Warszawa the following Air Traffic Services are provided:
-\paragraph{Air Traffic Control service}
+\subsubsection{Air Traffic Control Service}
 \begin{description}
     \item[Aerodrome Control Service] --- for traffic in the Movement Area of an aerodrome and in the CTR,
     \item[Approach Control Service] --- for departing and arriving controlled flights,
     \item[Area Control Service] --- for controlled flights in CTAs. 
 \end{description}
 
-\begin{tcolorbox}[
-    colback=orange!10!white,
-    colframe=orange,
-    title=\LARGE\textbf{Warning},
-    before title={\faExclamationTriangle~}
-]
-    \textbf{Section under construction}
-\end{tcolorbox}
+ATC may be exercised by:
+\begin{itemize}
+    \item surveillance --- ATS surveillance system using transmitters/receivers (interrogators) and transponders. Operationally available in all EPWW FIR airspace above FL95 and in selected TMAs where radar coverage is available,
+    \item procedural control --- a type of control in which information obtained using the ATS surveillance system is not necessary to provide air traffic control services (using crew position reports).
+\end{itemize}
+
+\subsubsection{Flight Information Service (FIS)}
+\begin{itemize}
+    \item meteorological information, SIGMET and AIRMET,
+    \item information about known air traffic - information given by an air traffic services unit to warn a pilot of other known or observed air traffic that may be in the vicinity of his position or intended flight route and to assist him in avoiding a collision,
+    \item coordinated information regarding access to and clearances to enter controlled airspaced, in consultation with the appropriate ATC controllers.
+\end{itemize}
+
+\subsubsection{Alert Service (ALRS)}
+\begin{itemize}
+    \item Due to the specificity of VATSIM, the alert service in vFIR Warszawa is de facto not conducted, except for the INCERFA phase, where in the event of lack of communication with the aircraft within a specified period of time, the unit responsible for FIS should initiate an attempt to contact the pilot, either via VHF or by text message.
+\end{itemize}
 
 \section{IFR flights}%
-\begin{tcolorbox}[
-    colback=orange!10!white,
-    colframe=orange,
-    title=\LARGE\textbf{Warning},
-    before title={\faExclamationTriangle~}
-]
-    \textbf{Section under construction}
-\end{tcolorbox}
+
+IFR flights in vFIR Warszawa must be conducted in accordance with the submitted flight plan.
+
+ATC is responsible for validating the flight plan to the FIR boundary. When possible, ATC should explain what the error in the flight plan is.
+
+The transition from VFR to IFR during a flight can only take place at or above the Sector Minimum Altitude (AMA --- Area Minimum Altitude).
+
+The transition from IFR to VFR during a flight can only take place in VMC conditions.
+
+It is ATC's responsibility to ensure, whether the above conditions are met.
+
 \section{VFR flights}%
-\begin{tcolorbox}[
-    colback=orange!10!white,
-    colframe=orange,
-    title=\LARGE\textbf{Warning},
-    before title={\faExclamationTriangle~}
-]
-    \textbf{Section under construction}
-\end{tcolorbox}
+
+\subsubsection{In controlled airspace}
+The obligation to submit a flight plan arises when the flight begins, ends or, in any phase of the flight, crosses or intrudes controlled airspace of any class.
+
+\subsubsection{In uncontrolled airspace}
+There is no obligation to submit flight plans for a VFR flight in uncontrolled airspace, unless such requirement has been imposed by a Flight Plan Mandatory Zone.
 
 \section{Squawk code assignment rules}%
 \label{sect:airspace:squawks}
 
 Virtual ATC of FIR Warszawa is provided with a pool of transponder codes ranging from 4500 to 4577. This gives a total of 64 different codes.
 
-\begin{table}[htb]
+\begin{table}[htbp]
     \centering
     \rowcolors{2}{vpink}{white}
     \begin{tabular}{|l|l|l|}
@@ -129,7 +139,7 @@ List of aircraft equipment codes assigning the code "1000":
 
 \-\hspace{1cm}H, I, L, E, G, W, P, S, LB1
 
-\begin{figure}[htb]
+\begin{figure}[htbp]
     \centering
     \includegraphics{modeS_FIRs.png}
     \caption{Mode S identification area map}
