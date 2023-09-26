@@ -1,0 +1,60 @@
+\chapter{Methods of control}
+
+\section{Radar service}
+
+The radar service is based on the use of surveillance system imaging with identified aircraft in order to ensure:
+\begin{itemize}
+    \item aircraft separation,
+    \item air traffic monitoring, in order to inform about route deviations,
+    \item radar vectoring to avoid traffic or shorten the route,
+    \item assistance for aircraft in distress,
+    \item coordination of different types of air traffic,
+\end{itemize}
+additionally, in case of radar service in approach control service:
+\begin{itemize}
+    \item radar vectoring to a position, from which final instrument approach can be conducted,
+    \item radar vectoring to a position, from which visual approach can be conducted,
+    \item monitoring instrument approach procedures and visual approaches.
+\end{itemize}
+
+In vFIR Warszawa, the following radar separation minima are applied:
+\begin{description}
+    \item[Horizontal separation] 5.0~NM
+    \item[Vertical separation]\parbox[t]{0.8\textwidth}{
+              below FL280: 1000~ft\\
+              above FL280: 2000~ft, except RVSM airspace, as defined in section \ref{sssec:airspace:rvsm}}
+\end{description}
+
+\subsubsection{APP with surveillance capabilities}
+In vFIR Warszawa, radar service is available at the following positions:
+\begin{itemize}
+    \item APP Gdańsk,
+    \item APP Kraków,
+    \item APP Poznań.
+    \item APP Warszawa.
+\end{itemize}
+
+\subsubsection{Reduced lateral separation}
+In following TMAs, approach may reduce lateral separation to 3~NM in 30~km (16~NM) radius from the radar antenna:
+\begin{itemize}
+    \item TMA Gdańsk,
+    \item TMA Warszawa.
+\end{itemize}
+
+\subsubsection{Wake turbulence separation}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|M{3cm}|M{3cm}|M{3cm}|}
+        \hline\rowcolor{vred}
+        \color{white}\textbf{Preceding} & \color{white}\textbf{Succeeding} & \color{white}\textbf{Separation} \\\hline
+        SUPER (J)                       & \multirow{2}{*}{HEAVY (H)}       & 5 NM                             \\\cline{1-1}\cline{3-3}
+        HEAVY (H)                       &                                  & 4 NM                             \\\hline
+        SUPER (J)                       & \multirow{2}{*}{MEDIUM (M)}      & 7 NM                             \\\cline{1-1}\cline{3-3}
+        HEAVY (H)                       &                                  & 5 NM                             \\\hline
+        SUPER (J)                       & \multirow{3}{*}{LIGHT (L)}       & 8 NM                             \\\cline{1-1}\cline{3-3}
+        HEAVY (H)                       &                                  & 6 NM                             \\\cline{1-1}\cline{3-3}
+        MEDIUM (M)                      &                                  & 5 NM                             \\\hline
+    \end{tabular}
+    \caption{Wake turbulence separation}
+    \label{tab:wtc_radar}
+\end{table}
