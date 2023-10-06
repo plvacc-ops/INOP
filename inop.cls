@@ -113,5 +113,5 @@
 \cfoot[\textbf{FOR VATSIM USE ONLY}]{\textbf{FOR VATSIM USE ONLY}}
 \ofoot[Revision: \revision]{Revision: \revision}
 
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 \setcounter{chapter}{-1}
