@@ -304,8 +304,9 @@ level~\cite{4444}}
 \subsubsection{Based on DME distance}
 
 Difference of distances reported by aircraft on same track shall be not lower
-than \textbf{20 NM} (\cref{fig:separation:long:dme20}). The separation can be reduced to \textbf{10 NM}, if the preceding aircraft is
-faster by at least \textbf{20 kts} (\cref{fig:separation:long:dme10}).
+than \textbf{20 NM} (\cref{fig:separation:long:dme20}). The separation can be
+reduced to \textbf{10 NM}, if the preceding aircraft is faster by at least
+\textbf{20 kts} (\cref{fig:separation:long:dme10}).
 
 \begin{figure}[htbp]
   \centering
@@ -323,6 +324,7 @@ faster by at least \textbf{20 kts} (\cref{fig:separation:long:dme10}).
   \label{fig:separation:long:dme10}
 \end{figure}
 
+\clearpage % Remove when below section is extended
 \subsection{Lateral separation}
 
 \begin{figure}[htbp]
@@ -346,24 +348,24 @@ faster by at least \textbf{20 kts} (\cref{fig:separation:long:dme10}).
   \label{fig:separation:lat:fix}
 \end{figure}
 
+\clearpage % Remove when above section is extended
 \subsection{Approach separation}
 
 Succeeding aircraft may be cleared for approach:
 \begin{itemize}
-\item when the preceding aircraft is in communication with
-  and sighted by the aerodrome control tower and
-  reasonable assurance exists that a normal landing can
-  be accomplished, or
-\item when timed approaches are used, the preceding aircraft
-  has passed the defined point inbound and reasonable
-  assurance exists that a normal landing can be
-  accomplished.
+\item when the preceding aircraft is in communication with and sighted by the
+  aerodrome control tower and reasonable assurance exists that a normal landing
+  can be accomplished, or
+\item when timed approaches are used, the preceding aircraft has passed the
+  defined point inbound and reasonable assurance exists that a normal landing
+  can be accomplished.
 \end{itemize}
 
 \subsection{Departure separation}
-As described in \cref{sec:twr:dep}
+As described in \cref{sec:twr:dep}.
 
-Other procedural separations described in Chapter 5 of ICAO Doc 4444~\cite{4444} may be used to the extent of the controller's knowledge.
+Other procedural separations described in Chapter 5 of ICAO Doc 4444~\cite{4444}
+may be used to the extent of the controller's knowledge.
 
 \section{Procedural control methods}
 \label{sec:app:procedural_methods}
@@ -390,6 +392,177 @@ Departure separation is achieved by the use of time-based separations (see
 When a departure is planned it is recommended not to descend arriving aircraft
 below FL110, until other separation minimum is ensured, due to departing
 aircraft climbing.
+
+If the aircraft is required to fly at FL110 for a longer period, the following
+difficulties should be taken into account in returning to scheduled descent
+profile at a later time.
+
+Arriving aircraft descending while departing aircraft climb is possible. Where
+vertical separation between aircraft cannot be ensured, adequate horizontal
+separation must be provided. This situation is illustrated in \cref{fig:separation:climb15min}
+in the example for climb, which presents a scenario divided into 3 stages:
+
+\begin{enumerate}
+\item maintained vertical separation,
+\item clearance for climb --- loss of vertical separation --- horizontal
+  separation must be maintaned,
+\item reaching level by the climbing aircraft --- vertical separation is
+  maintained again.
+\end{enumerate}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{4444/fig5-15A.png}
+  \caption{15 min separation between aircraft climbing on the same
+    track~\cite{4444}}
+  \label{fig:separation:climb15min}
+\end{figure}
+
+\subsubsection{Simultaneous climb/descent of aircraft}
+
+When aircraft on the same track are ascending/descending simultaneously, it is
+recommended to use the minimum/maximum rates of climb/descent.
+
+\subsubsection{Obtaining longitudinal time-based separation}
+
+If the expected positions of the separated aircraft do not meet the requirements
+for maintaining longitudinal separation, it is recommended to use one of the
+following methods to maintain separation:
+\begin{itemize}
+\item utilizing vertical separation,
+\item ordering the following aircraft to make an orbit to increase the distance
+  from the preceeding aircraft,
+\item speed control to obtain time separation
+\end{itemize}
+
+\subsubsection{Distances between points used in position reports}
+
+ATC may use EuroScope's imaging to determine the approximate distance between
+points reported by pilots during position reports.
+
+\subsubsection{Separating opposite traffic}
+
+In the event that two aircraft are traveling on opposite tracks, vertical
+separation should be maintained for at least 10 minutes before and after the
+expected time of passing (as shown in \cref{fig:separation:opposite}).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\textwidth]{4444/fig5-20.png}
+  \caption{10 min separation between aircraft on reciprocal tracks~\cite{4444}}
+  \label{fig:separation:opposite}
+\end{figure}
+
+\subsubsection{Useful phraseology}
+
+\begin{description}
+\item[DESCEND/CLIMB VIA STAR/SID TO (level)] clears aircraft to descend/climb to
+  given level while maintaining altitude and speed restrictions defined in the
+  procedure.
+\item[CROSS (point) AT (level)] requires aircraft to reach certain level over
+  specified position.
+\item[CROSS (point) AT (level) OR ABOVE, IF UNABLE MAINTAIN (level)] as above,
+  but specifies a level to maintain if reaching a given level is not possible.
+\item[CROSS (point) AT (TIME) OR LATER] requires the aircraft to adjust speed in
+  order to maintain time-based horizontal separation.
+\item[REPORT (time/distance/radial) FROM (point)] additional, non-standard,
+  position report in order to establish aircraft's postition in space.
+\end{description}
+
+\section{Silent coordination and transfer}
+
+Transfer of control and communication shall take place in a defined standard
+transfer point and level, set between sectors in this manual or a Letter of
+Agreement.
+
+If aircraft is to be transferred according to the standard rules no coordination
+is required.
+
+Coordination of shortcuts (DCT) and transfer levels (XFL) shall be done using
+built-in EuroScope coordination functions.
+
+\subsubsection{Transfer of control}
+
+Transfer may take place no sooner than 5 minutes before reaching the Area of
+Responisbility (AoR) boundary (including vertical boundaries). Transfer shall
+take place at least 1 minute before the aircraft enters AoR of the next
+controller.
+
+The following transfer procedure is in use:
+
+\begin{enumerate}
+\item Issuing frequency change instruction while using the ``HAND OFF''
+  function. It is interpreted as:
+  \begin{itemize}
+  \item transfer of radar identification,
+  \item declaration of immediate tranfer of control to the receiving controller,
+  \item confirmation that the aircraft is released under the conditions set in
+    the ATC release.
+  \end{itemize}
+\item Aircraft remains ``in suspension'' until it establishes two-way radio
+  communication with the next controller,
+\item After establishing communications the receiving controller accepts the
+  transfer by pressing ``ACCEPT''. It~is interpreted as:
+  \begin{itemize}
+  \item confirmation of establishing two-way communication at the designated frequency.
+  \end{itemize}
+\end{enumerate}
+
+Transfer refusal (``REFUSE'') may be used only when an apparent error in next
+controller selection has been made (e.g. transfer to APP Kraków instead of APP
+Gdańsk). A transfer shall not be refused if there is suspicion that aircraft may
+have been already transferred to incorrect frequency, even by mistake (e.g.
+transfer to APP Warszawa (North) instead of APP Warszawa (South)). If the
+receiving controller has used the ``REFUSE'' option, immediate contact between
+controllers should be established to explain the situation.
+
+\textbf{During transfer, the transferring controller is responsible for the separation.}
+
+\subsubsection{Transfer conditions}
+
+\begin{itemize}
+\item Vertical separation of \textbf{1000~ft}, or
+\item Lateral separation of:
+  \begin{itemize}
+  \item \textbf{5~NM}, when the preceding aircraft is not slower than the
+    succeeding aircraft (distance constant or increasing),
+  \item \textbf{10~NM}, when the preceding aircraft is slower then the
+    succeeding aircraft (distance is decreasing), while ensuring that during the
+    transfer of control the distance between aircraft will not decrease below 10~NM.
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{ATC release}
+
+Release of control is the authority of an air traffic control unit accepting
+communication to change the current flight plan before the aircraft enters its
+area of responsibility. This power must be clearly delegated during
+coordination, unless the local procedures or agreements between the units
+concerned provides otherwise.
+
+Transferring unit establishes the conditions of the release as a release for:
+\begin{itemize}
+\item climb,
+\item descent,
+\item change of direction,
+\item change of vertical or horizontal speed.
+\end{itemize}
+
+\subsubsection{ATC release during transfer from APP to ACC and between ACC
+  sectors}
+
+Transfer of control and communication contains releases for:
+
+\begin{itemize}
+\item level change,
+\item change of direction of flight,
+\item change of vertical or horizontal speed.
+\end{itemize}
+
+\section{Coordination of non-standard traffic}
+
+If the aircraft submits a non-standard request, actions should be
+coordinated with all controllers that may be affected by the traffic.
 
 %%% Local Variables:
 %%% mode: latex
