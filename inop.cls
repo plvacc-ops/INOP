@@ -39,7 +39,7 @@
     pdftitle={vFIR Warszawa Operations Manual},
     pdfcreator={pdflatex}
     ]{hyperref}
-\RequirePackage[dvipsnames,table]{xcolor}
+\RequirePackage[usenames,dvipsnames,table]{xcolor}
 \RequirePackage[leftbars,pdftex,xcolor]{changebar}
 \RequirePackage{amsmath}
 \RequirePackage{cleveref}
