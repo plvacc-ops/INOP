@@ -58,6 +58,7 @@
 \RequirePackage[headsepline, plainheadsepline,footsepline, plainfootsepline,draft=false]{scrlayer-scrpage}
 \RequirePackage{enumitem}
 \RequirePackage{gensymb}
+\RequirePackage{multicol}
 
 %% Package configurations
 \graphicspath{{img/}}

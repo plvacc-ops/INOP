@@ -124,6 +124,81 @@ Controllers providing CPDLC put the following information in their controller's
 text ATIS: ``\textit{CPDLC \^{}F285 logon: [LOGON]}'', where \textit{[LOGON]} is
 replaced by the LOGON code from \cref{tab:acc:cpdlc}.
 
+\section{Top-down coverage}
+\label{sec:acc:topdown}
+
+ACC controllers provide top-down coverage in the following TMAs:
+\begin{multicols}{2}
+  \textbf{Sector B}
+  \begin{itemize}
+  \item TMA Szczecin
+  \end{itemize}
+
+  \textbf{Sector C}
+  \begin{itemize}[label={}]
+  \item \textit{None}
+  \end{itemize}
+
+  \textbf{Sector D}
+  \begin{itemize}
+  \item TMA Poznań North
+  \item TMA Zielona Góra
+  \end{itemize}
+
+  \textbf{Sector E}
+  \begin{itemize}
+  \item TMA Warszawa
+  \item TMA Łódź
+  \item TMA Radom
+  \end{itemize}
+
+  \vfill\null\columnbreak
+
+  \textbf{Sector F}
+  \begin{itemize}
+  \item TMA Gdańsk
+  \item TMA Bydgoszcz
+  \end{itemize}
+
+  \textbf{Sector G}
+  \begin{itemize}[label={}]
+  \item \textit{None}
+  \end{itemize}
+
+  \textbf{Sector J}
+  \begin{itemize}
+  \item TMA Kraków
+  \end{itemize}
+
+  \textbf{Sector N}
+  \begin{itemize}
+  \item TMA Olsztyn --- Mazury
+  \end{itemize}
+
+  \textbf{Sector R}
+  \begin{itemize}
+  \item TMA Lublin
+  \item TMA Rzeszów
+  \end{itemize}
+
+  \textbf{Sector T}
+  \begin{itemize}
+  \item TMA Poznań South
+  \end{itemize}
+\end{multicols}
+
+Top-down coverage is inherited according to sector hierarchy, except
+TMA~Warszawa, TMA~Łódź and TMA~Radom. The inheritance hierarchy for those TMAs
+is defined as follows:
+\begin{itemize}
+\item Sector E,
+\item Sector C,
+\item Sector N,
+\item Sector J,
+\item Sector T (ALLFIR),
+\item Sector UPPER.
+\end{itemize}
+
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../main"
