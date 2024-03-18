@@ -40,7 +40,7 @@
     pdfcreator={pdflatex}
     ]{hyperref}
 \RequirePackage[usenames,dvipsnames,table]{xcolor}
-\RequirePackage[leftbars,pdftex,xcolor]{changebar}
+\RequirePackage[outerbars,pdftex,xcolor]{changebar}
 \RequirePackage{amsmath}
 \RequirePackage{cleveref}
 \RequirePackage{multicol}
@@ -59,6 +59,9 @@
 \RequirePackage{enumitem}
 \RequirePackage{gensymb}
 \RequirePackage{multicol}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{csquotes}
+\RequirePackage{hhline}
 
 %% Package configurations
 \graphicspath{{img/}}
