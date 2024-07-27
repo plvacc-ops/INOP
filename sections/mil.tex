@@ -4,22 +4,22 @@ In vFIR Warszawa, Military Air Traffic Control service can be provided only by v
 
 The following airports are considered military airports:
 \begin{itemize}
-    \item Cewice (EPCE),
-    \item Darłowo (EPDA),
-    \item Dęblin (EPDE),
-    \item Inowrocław (EPIR),
-    \item Krzesiny (EPKS),
-    \item Łask (EPLK),
-    \item Łęczyca (EPLY),
-    \item Malbork (EPMB),
-    \item Mirosławiec (EPMI),
-    \item Mińsk Mazowiecki (EPMM),
-    \item Oksywie (EPOK),
-    \item Pruszcz Gdański (EPPR),
-    \item Powidz (EPPW),
-    \item Radom (EPRA)\footnote{only when military approach service is provided},
-    \item Świdwin (EPSN),
-    \item Tomaszów Mazowiecki (EPTM).
+	\item Cewice (EPCE),
+	\item Darłowo (EPDA),
+	\item Dęblin (EPDE),
+	\item Inowrocław (EPIR),
+	\item Krzesiny (EPKS),
+	\item Łask (EPLK),
+	\item Łęczyca (EPLY),
+	\item Malbork (EPMB),
+	\item Mirosławiec (EPMI),
+	\item Mińsk Mazowiecki (EPMM),
+	\item Oksywie (EPOK),
+	\item Pruszcz Gdański (EPPR),
+	\item Powidz (EPPW),
+	\item Radom (EPRA)\footnote{only when military approach service is provided},
+	\item Świdwin (EPSN),
+	\item Tomaszów Mazowiecki (EPTM).
 \end{itemize}
 
 Military controlled airspaces (MCTRs, MTMAs) are \textbf{class D} airspaces.
@@ -35,3 +35,25 @@ Aircraft conducting a GAT flight should use the appropriate published SID/STAR f
 When using FRA, the entry/exit point is any FRA INTERMEDIATE point within 50 NM of the ARP.\@
 
 Aircraft conducting an OAT flight should use OAT coordination points appropriate for the airport as entry/exit points. The list of OAT coordination points is available in \href{https://www.ais.pansa.pl/mil/pliki/EP_ENR_2_3_0-1_en.pdf}{AIP MIL ENR 2.3.0}.
+
+\chapter{VFR minima in military controlled airspace}
+The minimum meteorological conditions required for VFR flights in military controlled airspace are consistent with those for civilian airspace, except for VFR flights in MTMA and special VFR flights in MCTR.
+
+\section{VFR in MTMA}
+The minimum weather conditions for VFR flights in MTMA are:
+\begin{itemize}
+	\item during the day:
+
+\end{itemize}
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}[c]{|c|c|c|c|c|}
+			\cellcolor{vred}                                     & \cellcolor{vred}                                          & \multicolumn{2}{|c|}{\color{white}\cellcolor{vred}Distance from clouds} & \cellcolor{vred}                                                                                                  \\\hhline{~~--~}
+			\multirow{-2}{*}{\color{white}\cellcolor{vred}Level} & \multirow{-2}{*}{\color{white}\cellcolor{vred}Visibility} & \color{white}\cellcolor{vred}Horizontal                                 & \color{white}\cellcolor{vred}Vertical & \multirow{-2}{*}{\color{white}\cellcolor{vred}Visual contact with ground} \\\hline
+			FL100 and above                                      & 8 km                                                      & 1500 m                                                                  & 300 m 1000 ft                         & not required                                                              \\\hline
+			below FL100 above 3000 ft                            & 5 km                                                      & 1500 m                                                                  & 300 m 1000 ft                         & not required                                                              \\\hline
+			below 3000 ft                                        & 5 km                                                      & not defined                                                             & not defined                           & required                                                                  \\\hline
+		\end{tabular}
+	\end{center}
+\end{table}

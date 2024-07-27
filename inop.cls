@@ -7,7 +7,7 @@
 \DeclareStringOption[XXXX.R]{revision}
 \ProcessKeyvalOptions*
 \DeclareOption*{%
-\PassOptionsToClass{\CurrentOption}{scrbook}%
+	\PassOptionsToClass{\CurrentOption}{scrbook}%
 }
 \ProcessOptions\relax
 
@@ -15,30 +15,30 @@
 
 % Loading base class
 \LoadClass[
-    oneside,
-    headings=small,
-    appendixprefix=true,
-    numbers=noenddot,
-    parskip=half,
-    headings=normal,
-    ]{scrbook}
+	oneside,
+	headings=small,
+	appendixprefix=true,
+	numbers=noenddot,
+	parskip=half,
+	headings=normal,
+]{scrbook}
 
 % Loading packages
 \RequirePackage[
-    paper=a4paper,
-    margin=1.27cm,
-    includeheadfoot
+	paper=a4paper,
+	margin=1.27cm,
+	includeheadfoot
 ]{geometry}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[default]{lato}
 \RequirePackage[
-    hidelinks,
-    breaklinks,
-    pdftex,
-    pdfauthor={Polish VACC},
-    pdftitle={vFIR Warszawa Operations Manual},
-    pdfcreator={pdflatex}
-    ]{hyperref}
+	hidelinks,
+	breaklinks,
+	pdftex,
+	pdfauthor={Polish VACC},
+	pdftitle={vFIR Warszawa Operations Manual},
+	pdfcreator={pdflatex}
+]{hyperref}
 \RequirePackage[usenames,dvipsnames,table]{xcolor}
 \RequirePackage[outerbars,pdftex,xcolor]{changebar}
 \RequirePackage{amsmath}
@@ -62,6 +62,7 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{csquotes}
 \RequirePackage{hhline}
+\RequirePackage{makecell}
 
 %% Package configurations
 \graphicspath{{img/}}
@@ -82,9 +83,9 @@
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 
 \renewcommand\chapterlinesformat[3]{%
-  \titlerule\par\nobreak%
-  \@hangfrom{#2}{#3}%
-  \par\nobreak\titlerule%
+	\titlerule\par\nobreak%
+	\@hangfrom{#2}{#3}%
+	\par\nobreak\titlerule%
 }
 
 % \renewcommand\sectionlinesformat[4]{%
@@ -95,16 +96,16 @@
 
 % Font definitions
 \addtokomafont{chapter}{%
-    \color{vred}
+	\color{vred}
 }
 \addtokomafont{section}{%
-    \color{vred}
+	\color{vred}
 }
 \addtokomafont{subsection}{%
-    \color{vred}
+	\color{vred}
 }
 \setkomafont{pageheadfoot}{%
-    \normalfont\normalcolor
+	\normalfont\normalcolor
 }
 
 \pagestyle{scrheadings}
