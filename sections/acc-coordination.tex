@@ -7,13 +7,13 @@ coordinated entry levels into the TMA and to facilitate further work by APP
 controllers to achieve appropriate descent profile (depending on the STAR
 procedure). Two altitude values are given for each procedure:
 \begin{itemize}
-\item first value (in bold) --- the coordinated level to which the aircraft
-  should climb/descend (unless the coordination states otherwise),
-\item second value (in italics) --- the maximum level at which the aircraft can
-  pass a given point (unless coordination states otherwise). These restrictions
-  most often result from SID/STAR restrictions,
-\item the ``TFR'' column --- the altitude at which communication transfer takes
-  place.
+	\item first value (in bold) --- the coordinated level to which the aircraft
+	      should climb/descend (unless the coordination states otherwise),
+	\item second value (in italics) --- the maximum level at which the aircraft can
+	      pass a given point (unless coordination states otherwise). These restrictions
+	      most often result from SID/STAR restrictions,
+	\item the ``TFR'' column --- the altitude at which communication transfer takes
+	      place.
 \end{itemize}
 
 \section{TMA Warszawa}\label{sec:acc:coordination:Warszawa}
@@ -22,28 +22,48 @@ APP Warszawa at TMA Warszawa provides radar control service for Warszawa/Chopin~
 
 \subsubsection{TMA entry levels}
 
-\input{./tables/Warszawa_EPWA_Entry.tex}
-\input{./tables/Warszawa_EPMO_Entry.tex}
-\input{./tables/Warszawa_EPRA_Entry.tex}
+\begin{table}[htbp]
+	\input{./tables/Warszawa_EPWA_Entry.tex}
+	\caption{TMA Warszawa --- EPWA arrival entry levels}
+	\label{tab:acc:coordination:warszawa:EPWA:entry}
+\end{table}
+\begin{table}[htbp]
+	\input{./tables/Warszawa_EPMO_Entry.tex}
+	\caption{TMA Warszawa --- EPMO arrival entry levels}
+	\label{tab:acc:coordination:warszawa:EPMO}
+\end{table}
+\begin{table}[htbp]
+	\input{./tables/Warszawa_EPRA_Entry.tex}
+	\caption{TMA Warszawa --- EPRA arrival entry levels}
+	\label{tab:acc:coordination:warszawa:EPRA}
+\end{table}
 
 \subsubsection{Transfer on heading}
 
 In justified cases, ACC may, after prior coordination with the APP, instruct the aircraft crew to enter the EPWA TMA on a heading.
 In a situation where an aircraft arriving at EPWA does not perform STAR (e.g.\ suspended procedure, avoiding an area of bad weather, etc.), ACC provides the aircraft with information about expected radar vectoring to the final approach to the runway in use or other instructions agreed with the APP.\@
 Unless otherwise agreed, the ACC will vector the aircraft to enter the APP AoR near the appropriate entry point (first point of the STAR procedure) at the appropriate heading given in table~\ref{tab:acc:coordination:warszawa:EPWA:entry:hdg}:
-\input{./tables/Warszawa_EPWA_Entry_HDG.tex}
+\begin{table}[htbp]
+	\input{./tables/Warszawa_EPWA_Entry_HDG.tex}
+	\caption{TMA Warszawa --- arrivals entry via heading}
+	\label{tab:acc:coordination:warszawa:EPWA:entry:hdg}
+\end{table}
 
 \subsubsection{Exit levels}
 TMA exit levels are given in table~\ref{tab:acc:coordination:warszawa:exit}.
-\input{./tables/Warszawa_Exit.tex}
+\begin{table}[htbp]
+	\input{./tables/Warszawa_Exit.tex}
+	\caption{TMA Warszawa --- exit levels}
+	\label{tab:acc:coordination:warszawa:exit}
+\end{table}
 
 \subsubsection{Transfer of communication}
 
 Transfer of communication requires the following conditions to be met:
 \begin{itemize}
-  \item maintained vertical separation, or
-  \item maintained 5~NM horizontal separation for flights flying same speed, or
-  \item maintained 10~NM horizontal separation when the preceding aircraft is slower.
+	\item maintained vertical separation, or
+	\item maintained 5~NM horizontal separation for flights flying same speed, or
+	\item maintained 10~NM horizontal separation when the preceding aircraft is slower.
 \end{itemize}
 
 Transfer shall take place 5 minutes prior to aircraft entering APP AoR, not sooner than FL260 (arrivals) / FL160 (departures).
@@ -58,7 +78,11 @@ IFR flights approaching Warszawa/Babice [EPBC] airport may proceed direct MULZA,
 
 TWR Łódź provides procedural control for the Łódź/Lublinek airport [EPLL]. The TMA EPLL Sector E area together with CTA03 (5500 ft--FL95) are delegated to the APP Warszawa controller, where APP WAW provides radar service.
 
-\input{./tables/Lodz_Entry_Exit.tex}
+\begin{table}[htbp]
+	\input{./tables/Lodz_Entry_Exit.tex}
+	\caption{TMA Łódź --- entry and exit levels}
+	\label{tab:acc:coordination:lodz}
+\end{table}
 
 During transfer of control to TWR Łódź radar service is terminated.
 
