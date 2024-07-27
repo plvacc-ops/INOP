@@ -5,10 +5,10 @@
 
 \subsubsection{Controlled Airspace}
 \begin{enumerate}[label={\alph*)}]
-    \item CTA from FL95 to FL660 --- class ``C'' airspace,
-    \item TMA, CTR --- below FL95 --- class ``C'' or ``D'' --- see ENR 2.1.1 or AD 2,
-    \item MTMA, MCTR --- class ``D'' --- see ENR 2.1.1 or AD2,
-    \item airspaces delegated to other FIRs --- see ENR 2.1.2
+	\item CTA from FL95 to FL660 --- class ``C'' airspace,
+	\item TMA, CTR --- below FL95 --- class ``C'' or ``D'' --- see ENR 2.1.1 or AD 2,
+	\item MTMA, MCTR --- class ``D'' --- see ENR 2.1.1 or AD2,
+	\item airspaces delegated to other FIRs --- see ENR 2.1.2
 \end{enumerate}
 
 \subsubsection{Uncontrolled Airspace}
@@ -18,7 +18,7 @@ Class ``G'' --- includes airspace from GND to FL95 outside of controlled airspac
 
 Currently, only MCTR Dęblin, MCTR Krzesiny and MTMA Dęblin are simulated on the VATSIM network.
 
-In the absence of vATC responsible for given military airspace, these airspaces are relegated to class G airspace.
+In the absence of vATC responsible for the given military airspace, these airspaces are relegated to class G airspace.
 
 The remaining military spaces are not currently simulated and have been relegated to Class G spaces.
 
@@ -28,13 +28,13 @@ vFIR Warszawa between FL290 and FL410 inclusive is an RVSM airspace.
 
 In this airspace, the minimum vertical separation is:
 \begin{description}
-    \item[1000 ft] between aircraft authorized for RVSM operations.
-    \item[2000 ft] between:
-          \begin{itemize}
-              \item aircraft authorized for RVSM operations and aircraft without such authorization,
-              \item aircraft not authorized for RVSM operations,
-              \item formation of aircraft and other aircraft.
-          \end{itemize}
+	\item[1000 ft] between aircraft authorized for RVSM operations.
+	\item[2000 ft] between:
+	      \begin{itemize}
+		      \item aircraft authorized for RVSM operations and aircraft without such authorization,
+		      \item aircraft not authorized for RVSM operations,
+		      \item formation of aircraft and other aircraft.
+	      \end{itemize}
 \end{description}
 
 \clearpage%
@@ -44,27 +44,27 @@ In this airspace, the minimum vertical separation is:
 Within vFIR Warszawa the following Air Traffic Services are provided:
 \subsubsection{Air Traffic Control Service}
 \begin{description}
-    \item[Aerodrome Control Service] --- for traffic in the Movement Area of an aerodrome and in the CTR,
-    \item[Approach Control Service] --- for departing and arriving controlled flights,
-    \item[Area Control Service] --- for controlled flights in CTAs.
+	\item[Aerodrome Control Service] --- for traffic in the Movement Area of an aerodrome and in the CTR,
+	\item[Approach Control Service] --- for departing and arriving controlled flights,
+	\item[Area Control Service] --- for controlled flights in CTAs.
 \end{description}
 
 ATC may be exercised by:
 \begin{itemize}
-    \item surveillance --- ATS surveillance system using transmitters/receivers (interrogators) and transponders. Operationally available in all EPWW FIR airspace above FL95 and in selected TMAs where radar coverage is available,
-    \item procedural control --- a type of control in which information obtained using the ATS surveillance system is not necessary to provide air traffic control services (using crew position reports).
+	\item surveillance --- ATS surveillance system using transmitters/receivers (interrogators) and transponders. Operationally available in all EPWW FIR airspace above FL95 and in selected TMAs where radar coverage is available,
+	\item procedural control --- a type of control in which information obtained using the ATS surveillance system is not necessary to provide air traffic control services (using crew position reports).
 \end{itemize}
 
 \subsubsection{Flight Information Service (FIS)}
 \begin{itemize}
-    \item meteorological information, SIGMET and AIRMET,
-    \item information about known air traffic - information given by an air traffic services unit to warn a pilot of other known or observed air traffic that may be in the vicinity of his position or intended flight route and to assist him in avoiding a collision,
-    \item coordinated information regarding access to and clearances to enter controlled airspaced, in consultation with the appropriate ATC controllers.
+	\item meteorological information, SIGMET and AIRMET,
+	\item information about known air traffic - information given by an air traffic services unit to warn a pilot of other known or observed air traffic that may be in the vicinity of his position or intended flight route and to assist him in avoiding a collision,
+	\item coordinated information regarding access to and clearances to enter controlled airspaced, in consultation with the appropriate ATC controllers.
 \end{itemize}
 
 \subsubsection{Alert Service (ALRS)}
 \begin{itemize}
-    \item Due to the specificity of VATSIM, the alert service in vFIR Warszawa is de facto not conducted, except for the INCERFA phase, where in the event of lack of communication with the aircraft within a specified period of time, the unit responsible for FIS should initiate an attempt to contact the pilot, either via VHF or by text message.
+	\item Due to the specificity of VATSIM, the alert service in vFIR Warszawa is de facto not conducted, except for the INCERFA phase, where in the event of lack of communication with the aircraft within a specified period of time, the unit responsible for FIS should initiate an attempt to contact the pilot, either via VHF or by text message.
 \end{itemize}
 
 The individual phases of the alert service, as well as the principles of providing the information service, are described in the \nameref{part:fis}.
@@ -95,21 +95,21 @@ There is no obligation to submit flight plans for a VFR flight in uncontrolled a
 Virtual ATC of FIR Warszawa is provided with a pool of transponder codes ranging from 4500 to 4577. This gives a total of 64 different codes.
 
 \begin{table}[htbp]
-    \centering
-    \rowcolors{2}{vpink}{white}
-    \begin{tabular}{|l|l|l|}
-        \rowcolor{vred}
-        \color{white}\textbf Sector       & \color{white}\textbf Pool & \color{white}\textbf Codes \\\hline
-        \textbf{ACC} \textit{(EPWW\_CTR)} & 4500 --- 4577             & 64                         \\\hline
-        \textbf{Procedural TMAs}          & 4500 --- 4517             & 16                         \\\hline
-        \textbf{TMA Poznań}               & 4520 --- 4527             & 8                          \\\hline
-        \textbf{TMA Gdańsk}               & 4530 --- 4537             & 8                          \\\hline
-        \textbf{TMA Kraków}               & 4540 --- 4547             & 8                          \\\hline
-        \textbf{TMA Warszawa}             & 4550 --- 4577             & 24                         \\\hline
-        \textit{\textbf{Reserve pool}}    & 4000 --- 4077             & 64                         \\\hline
-    \end{tabular}
-    \caption{Squawk codes pool assignment}
-    \label{tbl:squawk}
+	\centering
+	\rowcolors{2}{vpink}{white}
+	\begin{tabular}{|l|l|l|}
+		\rowcolor{vred}
+		\color{white}\textbf Sector       & \color{white}\textbf Pool & \color{white}\textbf Codes \\\hline
+		\textbf{ACC} \textit{(EPWW\_CTR)} & 4500 --- 4577             & 64                         \\\hline
+		\textbf{Procedural TMAs}          & 4500 --- 4517             & 16                         \\\hline
+		\textbf{TMA Poznań}               & 4520 --- 4527             & 8                          \\\hline
+		\textbf{TMA Gdańsk}               & 4530 --- 4537             & 8                          \\\hline
+		\textbf{TMA Kraków}               & 4540 --- 4547             & 8                          \\\hline
+		\textbf{TMA Warszawa}             & 4550 --- 4577             & 24                         \\\hline
+		\textit{\textbf{Reserve pool}}    & 4000 --- 4077             & 64                         \\\hline
+	\end{tabular}
+	\caption{Squawk codes pool assignment}
+	\label{tbl:squawk}
 \end{table}
 
 Transponder codes assigned in this way naturally run out when the most frequently occupied ATC positions are occupied and a standard traffic situation occurs. They should be awarded starting from the lowest number available.
@@ -143,10 +143,10 @@ List of aircraft equipment codes assigning the code "1000":
 \-\hspace{1cm}H, I, L, E, G, W, P, S, LB1
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics{modeS_FIRs.png}
-    \caption{Mode S identification area map}
-    \label{fig:modeS}
+	\centering
+	\includegraphics{modeS_FIRs.png}
+	\caption{Mode S identification area map}
+	\label{fig:modeS}
 \end{figure}
 
 In vFIR Warszawa, the \href{https://github.com/kusterjs/CCAMS}{CCAMS plugin} is used to assign transponder codes, which is an extension of the ModeS plugin.

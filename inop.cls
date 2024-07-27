@@ -57,6 +57,7 @@
 \RequirePackage{fontawesome5}
 \RequirePackage[headsepline, plainheadsepline,footsepline, plainfootsepline,draft=false]{scrlayer-scrpage}
 \RequirePackage{enumitem}
+\RequirePackage{textcomp}
 \RequirePackage{gensymb}
 \RequirePackage{multicol}
 \RequirePackage[utf8]{inputenc}
